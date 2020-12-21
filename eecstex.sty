@@ -1,0 +1,41 @@
+\usepackage{amsmath, amssymb, amsfonts, amsthm}
+\usepackage{cancel}
+\usepackage[output-complex-root=j]{siunitx}
+\usepackage[american, nooldvoltagedirection]{circuitikz}
+\usepackage{bm}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{fullpage}
+\usepackage{hyperref}
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\roman{subsubsection}}
+\newcommand{\lemmaautorefname}{Lemma}
+\renewcommand{\labelenumi}{\alph{enumi}.}
+\renewcommand{\labelenumii}{\roman{enumii}.}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\renewcommand{\C}{\mathbb{C}}
+\newcommand{\unit}[1]{\bm{\hat{#1}}}
+\newcommand{\iprod}[2]{\left\langle #1, #2 \right\rangle}
+\newcommand{\tpose}[1]{\left[#1\right]^{\! \top} \!\!}
+\newcommand{\diff}[1]{\frac{d}{d #1}}
+
+\lstset{
+    language=Python,
+    tabsize=4,
+    basicstyle=\ttfamily,
+    numbers=left,
+    numberstyle=\ttfamily,
+    keywordstyle=\color{blue},
+    frame=single
+}
+
+\endinput
